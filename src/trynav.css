@@ -1,0 +1,237 @@
+.nav{ background:salmon; position: relative; }
+.nav .links{ list-style: none; display: flex; padding-top: 10px;position: relative; left: -5%; }
+.nav .links li{ padding-right: 11%; }
+.nav .links span{ font-family: 'Reem Kufi', sans-serif; font-size: 19px; color:darkcyan }
+.nav .links a{ color: black; text-decoration: none; }
+.nav .links a:hover{ color: snow; border-bottom: 4px solid slategray; }
+/*start overlay*/
+.com-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    background: rgba(0 , 0,0,.6);
+}
+.com-overlay .container{
+    position: fixed;
+    border-radius: 50px;
+    top: 50%;
+    left: 50%;
+    z-index: 1001;
+    height: 400px;
+    transform: translate(-50%,-50%);
+    background: black;
+    font-size: 17px;
+    padding: 20px 0 0 20px;
+}
+.com-overlay h1{ color: yellowgreen; position: relative; left: 480px; }
+.com-overlay label{
+    display: block;
+    position: relative;
+    left: 800px;
+    top: 35px;
+    color: white;
+}
+.com-overlay input{
+    display: block;
+    margin-right: 400px;
+    width: 400px;
+    border-radius: 15px;
+    outline: none;
+    padding: 3px 10px 3px;
+}
+.com-overlay .com-sub{
+    position: relative;
+    left: 545px;
+    bottom: -50px;
+    width: 70px;
+    border-radius: 15px;
+    font-size: 18px;
+    padding: 3px 0;
+    border: none;
+    outline: none;
+    background: green;
+    color: white;
+}
+.com-overlay .com-del{
+    position: relative;
+    bottom: -50px;
+    width: 70px;
+    left: 370px;
+    border: none;
+    border-radius: 15px;
+    padding: 3px 0;
+    font-size: 18px;
+    outline: none;
+    background: red;
+    color: white;
+}
+/*button to close overlay*/
+.com-overlay .com-close{
+    position: absolute;
+    top: -15px;
+    right: -9px;
+    color: white;
+    background: red;
+    height: 50px;
+    width: 50px;
+    line-height: 42px;
+    cursor: pointer;
+    border-radius: 35px;
+    font-size: 40px;
+    text-align: center;
+}
+/*end overlay*/
+/*start rating overlay*/
+.rating-overlay{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(0 , 0,0,.6);
+    z-index: 1000;
+}
+.rating-overlay .container{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    background-color: mediumseagreen;
+    transform: translate(-50%,-50%);
+    height: 400px;
+    padding: 20px 0;
+    z-index: 1001;
+    font-size:17px ;
+    border-radius: 50px;
+    color: white;
+}
+.rating-overlay h2{
+    position: relative;
+    left: -44%;
+    color: snow;
+    background: black;
+    width: 130px;
+    text-align: center;
+    border-radius: 20px;
+}
+.rating-overlay h3{
+    left: -4%;
+    display: inline-flex;
+    padding-bottom: 35px;
+    padding-left: 245px;
+    top: 45px;
+    position: relative;
+    font-size: 24px;
+}
+.rating-overlay h5{
+    position: relative;
+    left: 82%;
+    font-size: 22px;
+    top: 9%;
+}
+.rating-overlay input{
+    position: relative;
+    margin-left: 250px;
+    width: 30px;
+    left: -4%;
+    cursor: pointer;
+}
+.rating-overlay .rating-btn{
+    font-size: 40px;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    line-height: 38px;
+    position: absolute;
+    top: -15px;
+    right: -9px;
+    cursor: pointer;
+    color: white;
+    background: red;
+    border-radius: 30px;
+}
+/*end rating overlay*/
+
+
+/*      for mobile           */
+@media only screen and (max-width:768px){
+    .nav {
+        padding: 5px 0;
+        width: 171%;
+    }
+    .nav .links{
+        left: 7%;
+        position: relative;
+    }
+    .nav .links li span{
+        font-size: 22px;
+        font-weight: bold;
+    }
+    .nav .links li {
+        font-size: 22px;
+    }
+    /*start com-overlay*/
+    .com-overlay{
+        position: fixed;
+        width: 171%;
+    }
+    .com-overlay .container{
+        width: 600px;
+        position: fixed;
+        left: 87%;
+    }
+    .com-overlay h1{
+        position: relative;
+        left: 37%;
+    }
+    .com-overlay input{
+        margin-right: 29%;
+        font-size: 20px;
+    }
+    .com-overlay label{
+        position: relative;
+        left: 76%;
+        font-size: 19px;
+    }
+    .com-overlay .com-sub{
+        position: relative;
+        left: 0%;
+        font-size: 24px;
+        bottom: -16%;    
+    }
+    .com-overlay .com-del{
+        position: relative;
+        right: -55%;
+        font-size: 25px;
+        bottom: -17%;
+    }
+    /*endcom-overlay*/
+
+    /*start rating overlay*/
+    .rating-overlay{
+        position: fixed;
+        width: 171%;
+    }
+    .rating-overlay .container{
+        position: fixed;
+        width: 600px;
+        left: 87%;
+    }
+    .rating-overlay .container h3{
+        font-size: 24px;
+        position: relative;
+        padding-left: 90px;
+    }
+    .rating-overlay .container h5{
+        position: relative;
+        left: 67%;
+        font-size: 25px;
+    }
+    .rating-overlay .container input{
+        position: relative;
+        margin-left: 100px;
+    }
+    /*end rating overlay*/
+}

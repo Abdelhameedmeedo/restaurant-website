@@ -1,0 +1,31 @@
+$mainColor: lightgrey;
+$paddingBottom: 30px;
+$paddingTop:25px;
+
+
+.home{ background: rgba(0,0,0,.8) }
+.home .cont{
+    padding-bottom: $paddingBottom;
+    padding-top: $paddingTop;
+}
+.home .cont span{
+    color: lightsteelblue;
+    position: relative;
+    left: 225px;
+    font-size: 23px;
+    /*googlr fonys*/
+    font-family: 'Harmattan', sans-serif;
+    font-family: 'Kufam', cursive;
+    font-family: 'Reem Kufi', sans-serif;
+}
+.home .p1 p{ padding-top: 75px; }
+.home .cont p{ 
+    color: $mainColor; 
+    font-size: 20px;
+    /*google fonts*/ 
+    font-family: 'Harmattan', sans-serif;
+    font-family: 'Kufam', cursive;
+    font-family: 'Reem Kufi', sans-serif;
+    font-family: 'Tajawal', sans-serif;     
+}
+.home .cont a{ color: yellowgreen; text-decoration: none; }
